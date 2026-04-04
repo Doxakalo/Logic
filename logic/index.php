@@ -9,6 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 
+require_once __DIR__ .'/app/router.php';
+$router = new Router();
+
 echo '<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +25,7 @@ echo '<!DOCTYPE html>
 
 require_once __DIR__ . '/app/partials/header.php';
 
-require_once __DIR__ .'/app/layout.php';
+echo $router->router();
 
 require_once __DIR__ . '/app/partials/footer.php';
 echo '

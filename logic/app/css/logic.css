@@ -1,0 +1,35 @@
+.logic-circle-big {
+    width: var(--circle-big);
+    height: var(--circle-big);
+    border-radius: 50%;
+}
+
+.logic-circle-small {
+    width: var(--circle-small);
+    height: var(--circle-small);
+    border-radius: 50%;
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.green {
+    background-color: var(--orange);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.blue {
+    background-color: var(--blue);
+}

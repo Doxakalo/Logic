@@ -1,4 +1,13 @@
 :root {
     --dark-custom: #24282b; 
     --white: #FFFFFF;
+    --red: #a31515;
+    --yellow: #eef128;
+    --orange: #e49e08;
+    --blue: #001aff;
+    --purple: #370042;
+    --green: #0eaa54;
+
+    --circle-big: 100px;
+    --circle-small: 25px;
 }

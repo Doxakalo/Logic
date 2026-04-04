@@ -15,6 +15,11 @@ header .nav-component button {
     padding-right: 0.5rem;
 }
 
+header .nav-component a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 header .nav-component:hover {
     cursor: pointer;
     background-color: var(--dark-custom);
@@ -55,4 +60,10 @@ header select:focus {
 header select option:hover {
     color: var(--white);
     background-color: var(--dark-custom);
+}
+
+header .game-options-divider {
+    width: 1px;
+    height: 2rem;
+    border-right: 1px solid var(--dark-custom);
 }

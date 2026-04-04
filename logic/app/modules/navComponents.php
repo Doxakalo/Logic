@@ -39,7 +39,18 @@ class NavComponents {
                         <option value="beginner" '.($selected === 'beginner' ? 'selected' : '').'>Beginner</option>
                         <option value="master" '.($selected === 'master' ? 'selected' : '').'>Master</option>
                     </select>
-                </form>';
+                </form>'
+        ;
+    }
+
+    public function renderRedirect(string $href, string $title, string $redirect, string $ms):string {
+
+        return '<div class="nav-component ' . $ms . '">
+                    <a href="' . $href . '" class="nav-link" title="' . $title . '">
+                        ' . $redirect . '
+                    </a>
+                </div>'
+        ;
     }
 
 } 
