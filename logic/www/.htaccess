@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # přesměrování na index.php, aby bylo čistčí url
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>

@@ -1,0 +1,14 @@
+version: '3.8'
+name: logic
+
+services:
+  web: 
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../www:/var/www/html
+    container_name: logic
+    user: root
