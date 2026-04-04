@@ -30,7 +30,7 @@ echo $router->router();
 require_once __DIR__ . '/app/partials/footer.php';
 echo '
 <script src="/lib/js/bootstrap.bundle.min.js"></script>
-<script src="app/js/main.js"></script>
+<script type="module" src="app/js/main.js"></script>
 </body>
 </html>' . "\n";
 ?>

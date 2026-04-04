@@ -1,11 +1,32 @@
 <?php
 
 class LogicGenerated {
-    public function renderGeneratedCircles(string $testArd): string {
+    public function renderGeneratedCircles(): string {
         return '
-                <div class="row g-0">
-                    <div class="">
-                        a
+                <div class="row border border-dark rounded" id="logic-generated">
+                    <div class="col-3">
+                        <div class="p-2">
+                            <div class="logic-circle-big red" id="red">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="p-2">
+                            <div class="logic-circle-big purple" id="purple">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="p-2">
+                            <div class="logic-circle-big green" id="green">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="p-2">
+                            <div class="logic-circle-big yellow" id="yellow">
+                            </div>
+                        </div>
                     </div>
                 </div>
         ';
