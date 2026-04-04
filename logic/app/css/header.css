@@ -1,0 +1,58 @@
+header {
+    box-shadow: 0px 1px 7px 2px var(--dark-custom);
+    
+}
+
+header .nav-component {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid inherit;
+}
+
+header .nav-component button {
+    border: 1px solid inherit;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+header .nav-component:hover {
+    cursor: pointer;
+    background-color: var(--dark-custom);
+    color: var(--white) !important;
+}
+
+header .nav-component:hover button{
+    color: var(--white) !important;
+}
+
+header button {
+    border: none;
+    background-color: inherit;
+}
+
+header select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+    background: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+header select:hover {
+    border-color: var(--dark-custom); 
+    background: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right center;
+}
+
+header select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+header select option:hover {
+    color: var(--white);
+    background-color: var(--dark-custom);
+}
