@@ -13,7 +13,7 @@ echo '<!DOCTYPE html>
 require_once __DIR__ .'/app/layout.php';
 echo '
 <script src="/lib/js/bootstrap.bundle.min.js"></script>
-<script src="/app/js/main"></script>
+<script src="/app/js/main.js"></script>
 </body>
 </html>' . "\n";
 ?>
