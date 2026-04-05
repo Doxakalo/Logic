@@ -67,3 +67,38 @@ header .game-options-divider {
     height: 2rem;
     border-right: 1px solid var(--dark-custom);
 }
+
+@media (max-width: 600px) {
+    header .nav-component:hover {
+        cursor: pointer;
+        background-color: inherit;
+    }
+
+    header select option:hover {
+        color: var(--dark-custom);
+        background-color: var(--bs-light);
+    }
+
+    header select:hover {
+        border-color: var(--bs-light); 
+        background: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right center;
+    }
+
+    header .nav-component:hover {
+    cursor: pointer;
+    background-color: var(--bs-light);
+    color: var(--dark-custom) !important;
+    }
+
+    header .nav-component:hover button{
+        color: var(--dark-custom) !important;
+    }
+
+    header .game-options-divider {
+        width: 100%;
+        margin-left: 3%;
+        height: 1px;
+        border-right: 0;
+        border-bottom: 1px solid var(--dark-custom);
+    }
+ }

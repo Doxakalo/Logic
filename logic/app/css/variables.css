@@ -11,5 +11,8 @@
     --circle-big: 60px;
     --circle-small: 25px;
 
+    --circle-big-till-600: 30px;
+    --circle-small-till-600: 20px;
+
     --disabled: #a7a7a7; 
 }

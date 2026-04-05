@@ -118,3 +118,33 @@
 .blue {
     background-color: var(--blue);
 }
+
+.ps-2_5 {
+    padding-left: 0.7rem;
+}
+
+.z-3 {
+    z-index: 3;
+}
+
+@media (max-width: 600px) { 
+    .logic-circle-big {
+        width: var(--circle-big-till-600);
+        height: var(--circle-big-till-600);
+    }
+
+    .logic-circle-big-not-filled {
+        width: var(--circle-big-till-600);
+        height: var(--circle-big-till-600);
+    }
+
+    .playboard-divider {
+        right: 0%;
+        z-index: 4;
+    }
+
+    .logic-circle-small {
+        width: var(--circle-small-till-600);
+        height: var(--circle-small-till-600);
+    }
+}

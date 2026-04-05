@@ -27,7 +27,7 @@ echo '
                         echo $navComponents->renderDemo();
                         echo $navComponents->renderNewGame();
                         echo $navComponents->renderOptions();
-                        echo '<div class="nav-item me-3 game-options-divider d-none d-sm-flex">&nbsp;</div>';
+                        echo '<div class="nav-item me-3 game-options-divider">&nbsp;</div>';
                     } else {
                         echo $navComponents->renderRedirect("/", "back to main page", "main", "");
                         $ms = "";
@@ -44,7 +44,9 @@ echo '
 echo '
     <div class=" d-none d-sm-flex row">¨
         <div class="col-2 d-flex align-items-center">
-             <a class="navbar-brand ms-3" href="/">LogicGame</a>
+            <h1>
+                <a class="navbar-brand ms-3" href="/">Logic</a>
+            </h1>
         </div>
         <div class="col-8 d-flex align-items-center justify-content-center">'. "\n";
         

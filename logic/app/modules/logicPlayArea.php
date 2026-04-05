@@ -18,7 +18,7 @@ class LogicPlayArea {
     private function circleDiv(string $color): string {
 
         return '
-            <div class="col-4 col-md-2">
+            <div class="col-2">
                 <div class="py-3">
                     <div class="logic-circle-big pointer ' . $color . '" id="' . $color . 'Picker">
                     </div>
@@ -46,28 +46,28 @@ class LogicPlayArea {
     public function playBoardComponent(int $row, string $class, array $border): string {
         return '
             <div class="row g-0 ">
-                <div class="col-8 relative-position ' . $border[0] . ' ' . $class . '">
+                <div class="col-8 relative-position px-3 px-md-0 ' . $border[0] . ' ' . $class . '">
                     <div class="row">
                         <div class="col-3 d-flex justify-content-center">
-                            <div class="py-3">
+                            <div class="py-4 py-md-3">
                                 <div class="logic-circle-big-not-filled" id="row-' . $row . '-guess-1">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 d-flex justify-content-center">
-                            <div class="py-3 ">
+                        <div class="col-3 d-flex justify-content-center align-items-center">
+                            <div class="py-4 py-md-3">
                                 <div class="logic-circle-big-not-filled" id="row-' . $row . '-guess-2">
                                 </div>
                             </div>
                         </div>
                         <div class="col-3 d-flex justify-content-center">
-                            <div class="py-3">
+                            <div class="py-4 py-md-3">
                                 <div class="logic-circle-big-not-filled" id="row-' . $row . '-guess-3">
                                 </div>
                             </div>
                         </div>
                         <div class="col-3 d-flex justify-content-center">
-                            <div class="py-3">
+                            <div class="py-4 py-md-3">
                                 <div class="logic-circle-big-not-filled" id="row-' . $row . '-guess-4">
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ class LogicPlayArea {
                     <div class="playboard-divider">
                     </div>    
                 </div>
-                <div class="col-1 ' . $border[1] . ' ' . $class . '">
+                <div class="col-4 col-md-2 col-xl-1 z-3 ' . $border[1] . ' ' . $class . '">
                     <div class="row p-2">
                         <div class="col-6 d-flex align-items-center justify-content-center">
                             <div class="py-1 pe-2">
@@ -140,17 +140,23 @@ class LogicPlayArea {
     public function renderPlayArea(): string {
         
         return '
-            <div class="row g-0">
-                <div class=" offset-0 offset-xxl-1 col-12 col-md-6 col-xxl-4 ps-4  pt-1">
-                    '.
-                    $this->colorPicker()
-                    .'
+            <div class="row g-0 d-flex justify-content-center">
+                <div class="col-12 col-md-9 col-xl-8 me-0 ms-0 ms-xl-5 ms-xxl-0 me-xl-5 col-xxl-4">
+                    <h2>Vyber barvu</h2>
+                    <div class="px-2">
+                        '.
+                        $this->colorPicker()
+                        .'
+                    </div>
                 </div>
                 
-                <div class="col-12 col-md-6  offset-0 offset-xxl-1 ">
-                    '.
-                    $this->generatePlayBoard()
-                    .'
+                <div class="offset-0 offset-md-1 col-12 col-md-9 col-xxl-5  offset-0 offset-xl-1 offset-xxl-0 d-block justify-content-center ps-0 ps-md-4 ps-xl-0">
+                    <div>
+                        <h2>Hrací deska hry Logic</h2>
+                        '.
+                        $this->generatePlayBoard()
+                        .'
+                    </div>
                 </div>
             </div>
         ';
