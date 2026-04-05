@@ -6,6 +6,7 @@ export default class LogicGeneratedJs {
         this.interval = null;
         this.seconds = 0;
         this.duration = 5; 
+        this.fastFlashes = 10;
     }
 
     createCircle(color, position) {
@@ -13,7 +14,7 @@ export default class LogicGeneratedJs {
         const col = document.createElement('div');
         col.className = 'col-3';
         col.innerHTML = `
-            <div class="p-2">
+            <div class="py-3">
                 <div class="logic-circle-big ${color} ${position}"></div>
             </div>
         `;
@@ -52,7 +53,7 @@ export default class LogicGeneratedJs {
 
     startFinalAnimation() {
 
-        const flashes = 1;
+        const flashes = this.fastFlashes;
         let count = 0;
 
         const finalInterval = setInterval(() => {
