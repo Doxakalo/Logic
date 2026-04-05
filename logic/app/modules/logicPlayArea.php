@@ -80,19 +80,19 @@ class LogicPlayArea {
                     <div class="row p-2">
                         <div class="col-6 d-flex align-items-center justify-content-center">
                             <div class="py-1 pe-2">
-                                <div class="logic-circle-small border border-dark" id="row-' . $row . '-success-4">
+                                <div class="logic-circle-small border border-dark" id="row-' . $row . '-success-1">
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 d-flex align-items-center justify-content-center">
                             <div class="py-1 pe-2">
-                                <div class="logic-circle-small border border-dark" id="row-' . $row . '-success-4">
+                                <div class="logic-circle-small border border-dark" id="row-' . $row . '-success-2">
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 mt-2 d-flex align-items-center justify-content-center">
                             <div class="py-1 pe-2">
-                                <div class="logic-circle-small border border-dark" id="row-' . $row . '-success-4">
+                                <div class="logic-circle-small border border-dark" id="row-' . $row . '-success-3">
                                 </div>
                             </div>
                         </div>

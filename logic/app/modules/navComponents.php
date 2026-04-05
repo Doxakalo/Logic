@@ -13,7 +13,7 @@ class NavComponents {
     public function renderDemo(): string {
         return '
             <div class="nav-component me-3">
-                <button type="button" class="demo-btn">'
+                <button type="button" class="demo-btn" id="demoBtn">'
                 . $this->demoText . 
                 '</button>
             </div>'
