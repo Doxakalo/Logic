@@ -4,6 +4,74 @@
     border-radius: 50%;
 }
 
+.logic-circle-big-not-filled {
+    width: var(--circle-big);
+    height: var(--circle-big);
+    border-radius: 50%;
+    border: 1px solid var(--dark-custom);
+}
+
+.played {
+    background-color: var(--disabled);
+}
+
+.playing {
+    background-color: var(--white);
+}
+
+.not-played {
+    background-color: var(--disabled);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.border-first-left {
+    border-top: 1px solid var(--dark-custom);
+    border-left: 1px solid var(--dark-custom);
+    border-top-left-radius: 5px;
+}
+.border-first-right {
+    border-top: 1px solid var(--dark-custom);
+    border-right: 1px solid var(--dark-custom);
+    border-top-right-radius: 5px;
+}
+
+.border-between-left {
+    border-left: 1px solid var(--dark-custom);   
+}
+
+.border-between-right {
+    border-right: 1px solid var(--dark-custom);
+}
+
+.border-last-left {
+    border-left: 1px solid var(--dark-custom);
+    border-bottom: 1px solid var(--dark-custom);
+    border-bottom-left-radius: 5px;
+}
+
+.border-last-right {
+    border-right: 1px solid var(--dark-custom);
+    border-bottom: 1px solid var(--dark-custom);
+    border-bottom-right-radius: 5px;
+}
+
+.playboard-divider {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    z-index: 2;
+    width: 1px;
+    height: 80%;
+    border-right: 1px solid var(--dark-custom);
+}
+
+.relative-position {
+    position: relative;
+}
+
 .logic-circle-small {
     width: var(--circle-small);
     height: var(--circle-small);

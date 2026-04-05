@@ -15,7 +15,7 @@ export default class LogicGeneratedJs {
         col.className = 'col-3';
         col.innerHTML = `
             <div class="py-3">
-                <div class="logic-circle-big ${color} ${position}"></div>
+                <div class="logic-circle-big ${color} ${position}" id="${color}Generated"></div>
             </div>
         `;
         return col;
@@ -59,7 +59,7 @@ export default class LogicGeneratedJs {
         const finalInterval = setInterval(() => {
             this.container.innerHTML = '';
 
-            // vytvoření unikátních barev pro každý flash
+            // vytvoření unikátních barev pro každý flash, obdobně, jako na řádku 29
             const shuffledColors = [...this.colors].sort(() => 0.5 - Math.random()).slice(0, 4);
 
             for (let i = 0; i < 4; i++) {

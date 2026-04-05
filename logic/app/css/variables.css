@@ -8,6 +8,8 @@
     --purple: #370042;
     --green: #0eaa54;
 
-    --circle-big: 80px;
-    --circle-small: 20px;
+    --circle-big: 60px;
+    --circle-small: 25px;
+
+    --disabled: #a7a7a7; 
 }

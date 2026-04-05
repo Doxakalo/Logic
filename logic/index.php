@@ -3,9 +3,10 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($_POST as $key => $value) {
-        $_SESSION[$key] = $value; // argument pro session
+        $_SESSION[$key] = $value; 
     }
-    header("Location: " . $_SERVER['PHP_SELF']);
+
+    header("Location: /");
     exit;
 }
 
