@@ -72,7 +72,7 @@ export default class Demo {
             el.classList.add('logic-circle-big', guess[i]);
         }
 
-        this.logicPlayArea.evaluateRow(row);
+        this.logicPlayArea.evaluateRow(row, true);
         this.finishRowUI(row);
     }
 

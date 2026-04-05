@@ -23,7 +23,7 @@ class NavComponents {
     public function renderNewGame(): string {
         return '
             <div class="nav-component">
-                <button type="button" class="new-game-btn">'
+                <button type="button" class="new-game-btn" id="newGameBtn">'
                 . $this->newGameText . 
                 '</button>
             </div>'

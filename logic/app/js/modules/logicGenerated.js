@@ -70,11 +70,26 @@ export default class LogicGeneratedJs {
             }
 
             count++;
-            if (count >= flashes) clearInterval(finalInterval);
+             if (count >= flashes) {
+                clearInterval(finalInterval);
+
+                this.addQuestionMarks();
+            }
 
         }, 100);
         
     }
+
+    addQuestionMarks() {
+        const circles = this.container.querySelectorAll('.logic-circle-big');
+        circles.forEach(circle => {
+            const questionMark = document.createElement('div');
+            questionMark.className = 'question-mark-filler';
+            questionMark.textContent = '?';
+            circle.appendChild(questionMark);
+        });
+    }
+
 
     run() {
         this.startAnimation();

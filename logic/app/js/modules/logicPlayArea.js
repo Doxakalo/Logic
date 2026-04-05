@@ -100,7 +100,7 @@ export default class LogicPlayAreaJs {
         nextRight.classList.add('playing');
     }
 
-    evaluateRow(row) {
+    evaluateRow(row, knuth = false) {
 
         const colors = ['yellow','red','blue','green','orange','purple'];
 
@@ -158,14 +158,16 @@ export default class LogicPlayAreaJs {
             resultElements[i].classList.add('bg-danger');
         }
 
-        if (correctPosition === 4) { 
-            alert('Vyhrál jste, gratuluji');
-            //location.reload();
-        }
+        if (!knuth) {
+            if (correctPosition === 4) { 
+                alert('Vyhrál jste, gratuluji');
+                //location.reload();
+            }
 
-        if (this.currentRow === 10 && correctPosition !== 4) {
-            alert('Prohrál jste');
-            //location.reload();
+            if (this.currentRow === 10 && correctPosition !== 4) {
+                alert('Prohrál jste');
+                //location.reload();
+            }
         }
     }
 }

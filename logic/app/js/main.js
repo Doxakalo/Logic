@@ -22,8 +22,13 @@ switch(page) {
             const demo = new Demo(logicPlayArea);
             document.addEventListener('click', (e) => {
                 if (e.target && e.target.id === 'demoBtn') {
-                    console.log('Kliknuto na Demo tlačítko!');
                     demo.run(); 
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (e.target && e.target.id === 'newGameBtn') {
+                    window.location.reload();
                 }
             });
         });
