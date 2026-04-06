@@ -12,11 +12,11 @@ echo '<section id="logicGenerated" class="mt-4">
             echo $logicGenerated->renderGeneratedCircles();       
 echo '      </div>
         </div>
-      </section>';
+      </section>' . "\n";  
 
 echo '<section id="logicPlayArea" class="mt-4 d-block justify-content-center">
         <div class="section-child">' . "\n"; 
             echo $logicPlayArea->renderPlayArea();  
 echo '  </div>
-      </section>';      
+      </section>' . "\n";      
 ?>

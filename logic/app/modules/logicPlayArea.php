@@ -24,7 +24,7 @@ class LogicPlayArea {
                     </div>
                 </div>
             </div>
-        ';
+        ' . "\n";
 
     }
 
@@ -38,7 +38,7 @@ class LogicPlayArea {
             $return .= $this->circleDiv($collor);
         }
 
-        $return .= '</div>';
+        $return .= '</div>' . "\n";
 
         return $return;
     }
@@ -105,7 +105,7 @@ class LogicPlayArea {
                     </div>
                 </div>
             </div>
-        ';
+        ' . "\n";
     }
 
     public function returnBorder(int $row, int $lives):array {
@@ -151,7 +151,7 @@ class LogicPlayArea {
                 </div>
                 
                 <div class="offset-0 offset-md-1 col-12 col-md-9 col-xxl-5  offset-0 offset-xl-1 offset-xxl-0 d-block justify-content-center ps-0 ps-md-4 ps-xl-0">
-                    <div>
+                    <div id="lives" data-lives="' . $this->getLivesByDifficulty() . '">
                         <h2>Logic Game Board</h2>
                         '.
                         $this->generatePlayBoard()
@@ -159,7 +159,7 @@ class LogicPlayArea {
                     </div>
                 </div>
             </div>
-        ';
+        ' . "\n";
 
     }
 }

@@ -1,6 +1,9 @@
 export default class LogicPlayAreaJs {
 
     constructor() {
+        const livesElement = document.getElementById('lives');
+
+        this.maxGuesses = parseInt(livesElement.dataset.lives, 10) || 10;
         this.selectedColor = null;
         this.currentRow = 1;
         this.maxSlots = 4;
@@ -173,7 +176,7 @@ export default class LogicPlayAreaJs {
                 this.removeQuestionMarks();
             }
 
-            if (this.currentRow === 10 && correctPosition !== 4) {
+            if (this.currentRow === this.maxGuesses && correctPosition !== 4) {
                 alert('Prohrál jste');
                 this.removeQuestionMarks();
             }

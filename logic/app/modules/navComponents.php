@@ -16,7 +16,7 @@ class NavComponents {
                 <button type="button" class="demo-btn" id="demoBtn">'
                 . $this->demoText . 
                 '</button>
-            </div>'
+            </div>' . "\n"
         ;
     }
 
@@ -26,7 +26,7 @@ class NavComponents {
                 <button type="button" class="new-game-btn" id="newGameBtn">'
                 . $this->newGameText . 
                 '</button>
-            </div>'
+            </div>' . "\n"
         ;
     }
 
@@ -39,7 +39,7 @@ class NavComponents {
                         <option value="beginner" '.($selected === 'beginner' ? 'selected' : '').'>Beginner</option>
                         <option value="master" '.($selected === 'master' ? 'selected' : '').'>Master</option>
                     </select>
-                </form>'
+                </form>' . "\n"
         ;
     }
 
@@ -49,7 +49,7 @@ class NavComponents {
                     <a href="' . $href . '" class="nav-link" title="' . $title . '">
                         ' . $redirect . '
                     </a>
-                </div>'
+                </div>' . "\n"
         ;
     }
 

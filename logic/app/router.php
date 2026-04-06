@@ -18,7 +18,7 @@ class Router {
         
         $routes = [
             'main' => 'main.php',
-            'best-regards' => 'bestRegards.php',
+            'informations' => 'informations.php',
         ];
 
         if (array_key_exists($page, $routes)) {

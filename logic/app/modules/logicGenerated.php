@@ -29,7 +29,7 @@ class LogicGenerated {
                         </div>
                     </div>
                 </div>
-        ';
+        ' . "\n";  ;
     }
 }
 

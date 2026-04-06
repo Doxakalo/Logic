@@ -1,6 +1,6 @@
 export default class Demo {
 
-    constructor(logicPlayArea, maxGuesses = 9) {
+    constructor(logicPlayArea, maxGuesses = 6) {
         this.logicPlayArea = logicPlayArea;
         this.colors = ['yellow','red','blue','green','orange','purple'];
         this.positions = 4;

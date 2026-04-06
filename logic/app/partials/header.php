@@ -32,7 +32,7 @@ echo '
                         echo $navComponents->renderRedirect("/", "back to main page", "main", "");
                         $ms = "";
                     }
-                    echo $navComponents->renderRedirect("best-regards", "redirect to best regards", "best-regards", $ms);
+                    echo $navComponents->renderRedirect("informations", "redirect to informations", "Informations", $ms);
 
 echo '          
                 </div>
@@ -60,7 +60,7 @@ echo '
                 $ms = "";
             }
 
-            echo $navComponents->renderRedirect("best-regards", "redirect to best regards", "Best regards", $ms);
+            echo $navComponents->renderRedirect("informations", "redirect to informations", "Info", $ms);
 echo '  
         </div>
     </div>
