@@ -13,7 +13,7 @@
 
 ## Soubory
 
-- Vše je směřováno na `index.php` a rozepsáno v /app/pages/informations.php, **Information:** [http://localhost:8080](http://localhost:8080)
+- Vše je směřováno na `index.php` a rozepsáno v /app/pages/informations.php, **Informations:** [http://localhost:8080/informations](http://localhost:8080/informations)
 
 
 ## Požadavky
