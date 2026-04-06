@@ -150,7 +150,7 @@ class LogicPlayArea {
                     </div>
                 </div>
                 
-                <div class="offset-0 offset-md-1 col-12 col-md-9 col-xxl-5  offset-0 offset-xl-1 offset-xxl-0 d-block justify-content-center ps-0 ps-md-4 ps-xl-0">
+                <div class="offset-0 offset-md-1 offset-xl-2 offset-xxl-1 col-12 col-md-9 col-xxl-5  offset-0 offset-xl-1 offset-xxl-0 d-block justify-content-center ps-0 ps-md-4 ps-xl-0">
                     <div id="lives" data-lives="' . $this->getLivesByDifficulty() . '">
                         <h2>Logic Game Board</h2>
                         '.
