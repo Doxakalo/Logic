@@ -3,6 +3,7 @@
     height: var(--circle-big);
     border-radius: 50%;
     position: relative;
+    margin-top: 0;
 }
 
 .logic-circle-big-not-filled {
@@ -10,6 +11,7 @@
     height: var(--circle-big);
     border-radius: 50%;
     border: 1px solid var(--dark-custom);
+    margin-top: 0;
 }
 
 .question-mark-filler {
@@ -146,5 +148,22 @@
     .logic-circle-small {
         width: var(--circle-small-till-600);
         height: var(--circle-small-till-600);
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .logic-circle-big {
+        width: var(--circle-big-1400-1700);
+        height: var(--circle-big-1400-1700);
+    }
+
+    .logic-circle-big-not-filled {
+        margin-top: 0.3rem;
+        width: var(--circle-big-1400-1700);
+        height: var(--circle-big-1400-1700);
+    }
+
+    #lives .logic-circle-big {
+        margin-top: 0.3rem;
     }
 }
