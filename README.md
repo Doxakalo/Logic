@@ -1,4 +1,4 @@
-# Epptec Project
+# Logic/Mastermind Project
 
 - **Autor:** Václav Balek
 - **URL:** [http://localhost:8080](http://localhost:8080)
