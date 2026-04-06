@@ -46,7 +46,7 @@ class LogicPlayArea {
     public function playBoardComponent(int $row, string $class, array $border): string {
         return '
             <div class="row g-0 ">
-                <div class="col-8 relative-position px-3 px-md-0 ' . $border[0] . ' ' . $class . '">
+                <div class="big-circles-area col-8 relative-position px-3 px-md-0 ' . $border[0] . ' ' . $class . '">
                     <div class="row">
                         <div class="col-3 d-flex justify-content-center">
                             <div class="py-4 py-md-3">
@@ -76,7 +76,7 @@ class LogicPlayArea {
                     <div class="playboard-divider">
                     </div>    
                 </div>
-                <div class="col-4 col-md-2 col-xl-1 z-3 ' . $border[1] . ' ' . $class . '">
+                <div class="small-circles-area col-4 col-md-2 col-xl-1 z-3 ' . $border[1] . ' ' . $class . '">
                     <div class="row p-2">
                         <div class="col-6 d-flex align-items-center justify-content-center">
                             <div class="py-1 pe-2">
@@ -142,7 +142,7 @@ class LogicPlayArea {
         return '
             <div class="row g-0 d-flex justify-content-center">
                 <div class="col-12 col-md-9 col-xl-8 me-0 ms-0 ms-xl-5 ms-xxl-0 me-xl-5 col-xxl-4">
-                    <h2>Vyber barvu</h2>
+                    <h2>Palette</h2>
                     <div class="px-2">
                         '.
                         $this->colorPicker()
@@ -152,7 +152,7 @@ class LogicPlayArea {
                 
                 <div class="offset-0 offset-md-1 col-12 col-md-9 col-xxl-5  offset-0 offset-xl-1 offset-xxl-0 d-block justify-content-center ps-0 ps-md-4 ps-xl-0">
                     <div>
-                        <h2>Hrací deska hry Logic</h2>
+                        <h2>Logic Game Board</h2>
                         '.
                         $this->generatePlayBoard()
                         .'

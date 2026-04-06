@@ -60,7 +60,7 @@ echo '
                 $ms = "";
             }
 
-            echo $navComponents->renderRedirect("best-regards", "redirect to best regards", "best-regards", $ms);
+            echo $navComponents->renderRedirect("best-regards", "redirect to best regards", "Best regards", $ms);
 echo '  
         </div>
     </div>

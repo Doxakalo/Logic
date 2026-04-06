@@ -25,7 +25,7 @@ export default class Demo {
             if (feedback.correctPosition === 4) {
                 await this.sleep(this.delay);
                 alert(`Vyhráno pomocí Knuth predikce v  ${this.currentRow} krocích`);
-                location.reload();
+                this.logicPlayArea.removeQuestionMarks();
                 return;
             }
 
@@ -41,7 +41,7 @@ export default class Demo {
         }
 
         alert('Knuth predikce selhala');
-        location.reload();
+        this.logicPlayArea.removeQuestionMarks();
     }
 
     generateAllCombinations() {
@@ -146,23 +146,23 @@ export default class Demo {
     }
 
     finishRowUI(row) {
-        const left = document.querySelector(`[id^="row-${row}-guess-1"]`)?.closest('.col-8');
+        const left = document.querySelector(`[id^="row-${row}-guess-1"]`)?.closest('.big-circles-area');
         if (!left) return;
 
         left.classList.remove('playing');
         left.classList.add('played');
 
-        const right = left.parentElement.querySelector('.col-1');
+        const right = left.parentElement.querySelector('.small-circles-area');
         right.classList.remove('playing');
         right.classList.add('played');
 
-        const nextLeft = document.querySelector(`[id^="row-${row+1}-guess-1"]`)?.closest('.col-8');
+        const nextLeft = document.querySelector(`[id^="row-${row+1}-guess-1"]`)?.closest('.big-circles-area');
         if (!nextLeft) return;
 
         nextLeft.classList.remove('not-played');
         nextLeft.classList.add('playing');
 
-        const nextRight = nextLeft.parentElement.querySelector('.col-1');
+        const nextRight = nextLeft.parentElement.querySelector('.small-circles-area');
         nextRight.classList.remove('not-played');
         nextRight.classList.add('playing');
     }

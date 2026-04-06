@@ -71,12 +71,12 @@ export default class LogicPlayAreaJs {
 
         const left = document.querySelector(
             `[id^="row-${row}-guess-1"]`
-        ).closest('.col-8');
+        ).closest('.big-circles-area');
 
         left.classList.remove('playing');
         left.classList.add('played');
 
-        const right = left.parentElement.querySelector('.col-1');
+        const right = left.parentElement.querySelector('.small-circles-area');
 
         right.classList.remove('playing');
         right.classList.add('played');
@@ -87,17 +87,26 @@ export default class LogicPlayAreaJs {
 
         const nextLeft = document.querySelector(
             `[id^="row-${this.currentRow}-guess-1"]`
-        )?.closest('.col-8');
+        )?.closest('.big-circles-area');
 
         if (!nextLeft) return;
 
         nextLeft.classList.remove('not-played');
         nextLeft.classList.add('playing');
 
-        const nextRight = nextLeft.parentElement.querySelector('.col-1');
+        const nextRight = nextLeft.parentElement.querySelector('.small-circles-area');
 
         nextRight.classList.remove('not-played');
         nextRight.classList.add('playing');
+    }
+
+    removeQuestionMarks() {
+        const container = document.getElementById('logic-generated');
+        const circles = container.querySelectorAll('.logic-circle-big');
+        circles.forEach(circle => {
+            const questionMarks = circle.querySelectorAll('.question-mark-filler');
+            questionMarks.forEach(qm => qm.remove());
+        });
     }
 
     evaluateRow(row, knuth = false) {
@@ -161,12 +170,12 @@ export default class LogicPlayAreaJs {
         if (!knuth) {
             if (correctPosition === 4) { 
                 alert('Vyhrál jste, gratuluji');
-                //location.reload();
+                this.removeQuestionMarks();
             }
 
             if (this.currentRow === 10 && correctPosition !== 4) {
                 alert('Prohrál jste');
-                //location.reload();
+                this.removeQuestionMarks();
             }
         }
     }
