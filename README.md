@@ -2,6 +2,7 @@
 
 - **Autor:** Václav Balek
 - **URL:** [http://localhost:8080](http://localhost:8080)
+- **Informations:** [http://localhost:8080/informations](http://localhost:8080/informations)
 - Tento projekt používá **Docker** pro spuštění aplikace. Makefile usnadňuje práci, ale vše lze spustit i bez něj.
 - Jelikož jsem od vás dostal informaci, že projekt, který bych zaštiťoval není postavený čistě na frameworku, tak jsem zde chtěl ukázat hlavně php a javascript bez frameworku.
 
@@ -13,7 +14,7 @@
 
 ## Soubory
 
-- Vše je směřováno na `index.php` a rozepsáno v /app/pages/informations.php, **Informations:** [http://localhost:8080/informations](http://localhost:8080/informations)
+- Vše je směřováno na `index.php` a rozepsáno v /app/pages/informations.php **Informations:** [http://localhost:8080/informations](http://localhost:8080/informations)
 
 
 ## Požadavky
