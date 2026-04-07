@@ -12,7 +12,7 @@ echo '
 <header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex d-sm-none">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">LogicGame</a>
+            <a class="navbar-brand" href="index.php?p=main">LogicGame</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +29,9 @@ echo '
                         echo $navComponents->renderOptions();
                         echo '<div class="nav-item me-3 game-options-divider">&nbsp;</div>';
                     } else {
-                        echo $navComponents->renderRedirect("/", "back to main page", "main", "");
-                        $ms = "";
+                        echo $navComponents->renderRedirect("index.php?p=main", "back to main page", "main", "");
                     }
-                    echo $navComponents->renderRedirect("informations", "redirect to informations", "Informations", $ms);
+                    echo $navComponents->renderRedirect("index.php?p=informations", "redirect to informations", "Info", $ms);
 
 echo '          
                 </div>
@@ -45,7 +44,7 @@ echo '
     <div class=" d-none d-sm-flex row">¨
         <div class="col-2 d-flex align-items-center">
             <h1>
-                <a class="navbar-brand ms-3" href="/">Logic</a>
+                <a class="navbar-brand ms-3" href="index.php?p=main">Logic</a>
             </h1>
         </div>
         <div class="col-8 d-flex align-items-center justify-content-center">'. "\n";
@@ -56,11 +55,11 @@ echo '
                 echo $navComponents->renderOptions();
                 echo'<div class="game-options-divider ms-3">&nbsp;</div>';
             } else {
-                echo $navComponents->renderRedirect("/", "back to main page", "main", "");
+                echo $navComponents->renderRedirect("index.php?p=main", "back to main page", "main", "");
                 $ms = "";
             }
 
-            echo $navComponents->renderRedirect("informations", "redirect to informations", "Info", $ms);
+            echo $navComponents->renderRedirect("index.php?p=informations", "redirect to informations", "Info", $ms);
 echo '  
         </div>
     </div>

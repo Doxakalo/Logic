@@ -34,7 +34,7 @@ class NavComponents {
         $selected = $_SESSION['difficulty'] ?? 'beginner'; 
 
         return '
-                <form method="POST" action="/">
+                <form method="POST" action="index.php">
                     <select class="nav-component" name="difficulty" onchange="this.form.submit()">
                         <option value="beginner" '.($selected === 'beginner' ? 'selected' : '').'>Beginner</option>
                         <option value="master" '.($selected === 'master' ? 'selected' : '').'>Master</option>

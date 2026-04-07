@@ -24,7 +24,7 @@
                     <li class="ms-5">V logic.css jsou globální styly pro Logic/Mastermind.</li>
                     <li>PHP: app/modules, app/pages, app/router.php, app/partials, index.php.</li>
                     <li class="ms-3">Vše začíná v index.php, kde je naimportovaný router, header, router, začátek session ( do session ukládám nastavený obtížnosti pro zobrazení pokusů metodou POST ), a knihovna bootstrap.</li>
-                    <li class="ms-3">Na stejné úrovni, jako je index.php jsem vytvořil .htaccess pro řešení přesměrování a hezčího url.</li>
+                    <li class="ms-3">Pro routing využívám argument p=#, např. tato stránka je pod index.php?p=informations a stránka hlavní bez arumentu, nebo index.php?p=main.</li>
                     <li class="ms-3">V app/router.php probíhá routing a je rozdělený na dvě funkce, jelikož funkci getPage využívám i pro generování headeru.</li>
                     <li class="ms-3">V app/modules/navComponents.php vytvářím html obsah pro header, které jsou naimportované v headeru.</li>
                     <li class="ms-3">V app/pages/main.php jsem importoval html obsah z logicPlayArea.php a logicGenerated.php.</li>

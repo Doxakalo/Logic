@@ -1,8 +1,8 @@
 # Logic/Mastermind Project
 
 - **Autor:** Václav Balek
-- **URL:** [http://localhost:8080](http://localhost:8080)
-- **Informations:** [http://localhost:8080/informations](http://localhost:8080/informations)
+- **URL:** [http://localhost/logic/index.php](http://localhost/logic/index.php) / [http://localhost/logic/index.php](http://localhost/logic/index.php?p=main)
+- **Informations:** /logic/p=informatons
 - Tento projekt používá **Docker** pro spuštění aplikace. Makefile usnadňuje práci, ale vše lze spustit i bez něj.
 - Jelikož jsem od vás dostal informaci, že projekt, který bych zaštiťoval není postavený čistě na frameworku, tak jsem zde chtěl ukázat hlavně php a javascript bez frameworku.
 

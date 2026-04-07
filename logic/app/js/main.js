@@ -1,14 +1,10 @@
+console.log("fungujeu");
 import LogicGeneratedJs from './modules/logicGenerated.js';
 import LogicPlayAreaJs from './modules/logicPlayArea.js';
 import Demo from './modules/demo.js';
 
-let page = window.location.pathname.substring(1);
-
-if (page.length === 0) {
-    page = 'main';
-}
-
-
+let urlParams = new URLSearchParams(window.location.search);
+let page = urlParams.get('p') || 'main';
 
 switch(page) {
     case 'main':
