@@ -2,7 +2,7 @@
 
 - **Autor:** Václav Balek
 - **URL:** [http://localhost/logic/index.php](http://localhost/logic/index.php) / [http://localhost/logic/index.php?p=main](http://localhost/logic/index.php?p=main)
-- **Informations:** [http://localhost/logic/index.php](http://localhost/logic/index.php?p=informations)
+- **Informations:** [http://localhost/logic/index.php?p=informations](http://localhost/logic/index.php?p=informations)
 - Tento projekt používá **Docker** pro spuštění aplikace. Makefile usnadňuje práci, ale vše lze spustit i bez něj.
 - Jelikož jsem od vás dostal informaci, že projekt, který bych zaštiťoval není postavený čistě na frameworku, tak jsem zde chtěl ukázat hlavně php a javascript bez frameworku.
 
