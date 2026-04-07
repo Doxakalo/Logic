@@ -10,9 +10,30 @@ export default class Demo {
         this.allCombinations = this.generateAllCombinations(); // generuje všechny 1296 kombinací
         this.possibleSolutions = [...this.allCombinations];
         this.currentRow = 1;
+
+        this.isRunning = false;
+        this.isFinished = false;
     }
 
     async run() {
+
+        if (this.isFinished) {
+            alert("Demo operace již proběhla. Pro pokračování vygenerujte novou hru.");
+            return;
+        }
+
+        const questionMarks = document.querySelectorAll('.question-mark-filler');
+        if (questionMarks.length !== 4) {
+            alert("Nejdříve musím vygenerovat hádanku a skrýt barvy. Tato operace trvá pár sekund.");
+            return;
+        }
+
+        if (this.isRunning) {
+            alert("Demo operace již běží, počkejte na dokončení, nebo vygenerujte novou hru.");
+            return;
+        } 
+
+        this.isRunning = true;
 
         let guess = ['red','red','blue','blue'];
 
@@ -24,7 +45,8 @@ export default class Demo {
 
             if (feedback.correctPosition === 4) {
                 await this.sleep(this.delay);
-                alert(`Vyhráno pomocí Knuth predikce v  ${this.currentRow} krocích`);
+                alert(`Vyhráno pomocí Knuth predikce v  ${this.currentRow} krocích. Pro pokračování vygenerujte novou hru.`);
+                this.isFinished = true;
                 this.logicPlayArea.removeQuestionMarks();
                 return;
             }
@@ -40,7 +62,8 @@ export default class Demo {
             this.currentRow++;
         }
 
-        alert('Knuth predikce selhala');
+        alert('Knuth predikce selhala. Pro pokračování vygenerujte novou hru.');
+        this.isFinished = true;
         this.logicPlayArea.removeQuestionMarks();
     }
 
