@@ -25,7 +25,7 @@
 
 ---
 
-## Verze s Makefile
+## Nebo verze Docker s využitím Makefile
 
 ### Spuštění projektu
 
@@ -57,7 +57,7 @@ make restart
 make fish
 ```
 
-## Verze bez Makefile
+## Nebo verze pouze s Dockerem
 
 ### Spuštění projektu
 
